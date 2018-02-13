@@ -30,14 +30,15 @@ namespace MyEFDemo.Controllers
         }
 
         // POST api/<controller>
-        public int Post([FromBody]UserItem value)
+        public int Post([FromBody]IList<UserItem> values)
         {
-            return _userService.Add(value);
+            return _userService.Add(values);
         }
 
         // PUT api/<controller>/5
-        public void Put(int id, [FromBody]string value)
+        public void Put([FromBody]IList<UserItem> values)
         {
+             _userService.Update(values);
         }
 
         // DELETE api/<controller>/5

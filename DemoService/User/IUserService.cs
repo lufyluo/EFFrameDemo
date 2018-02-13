@@ -11,6 +11,7 @@ namespace DemoService.User
     public interface IUserService:IDependency
     {
         UserInfo Get(int id);
-        int Add(UserItem userItem);
+        int Add(IList<UserItem> userItem);
+        void Update(IList<UserItem> userItem);
     }
 }

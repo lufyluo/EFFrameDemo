@@ -31,10 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -55,6 +55,14 @@
     <Compile Include="Migrations\201801020651013_TableKeyChange.cs" />
     <Compile Include="Migrations\201801020651013_TableKeyChange.Designer.cs">
       <DependentUpon>201801020651013_TableKeyChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802080506073_AddCreateDate.cs" />
+    <Compile Include="Migrations\201802080506073_AddCreateDate.Designer.cs">
+      <DependentUpon>201802080506073_AddCreateDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802080621331_check.cs" />
+    <Compile Include="Migrations\201802080621331_check.Designer.cs">
+      <DependentUpon>201802080621331_check.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -79,6 +87,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801020651013_TableKeyChange.resx">
       <DependentUpon>201801020651013_TableKeyChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802080506073_AddCreateDate.resx">
+      <DependentUpon>201802080506073_AddCreateDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802080621331_check.resx">
+      <DependentUpon>201802080621331_check.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
