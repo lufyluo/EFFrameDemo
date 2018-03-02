@@ -41,6 +41,7 @@ namespace DemoService.User
                     CreateTime = DateTime.Now
                 }).ToList();
                 _repository.Add(entities);
+                
                 scope.Commit();
             }
            
