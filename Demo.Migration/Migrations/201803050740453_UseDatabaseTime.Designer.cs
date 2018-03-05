@@ -6,14 +6,14 @@ namespace Demo.Migration.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class check : IMigrationMetadata
+    [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
+    public sealed partial class UseDatabaseTime : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(check));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(UseDatabaseTime));
         
         string IMigrationMetadata.Id
         {
-            get { return "201802080621331_check"; }
+            get { return "201803050740453_UseDatabaseTime"; }
         }
         
         string IMigrationMetadata.Source

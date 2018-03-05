@@ -40,8 +40,11 @@ namespace DemoService.User
                     Sex = n.Sex,
                     CreateTime = DateTime.Now
                 }).ToList();
+                //foreach (var entity in entities)
+                //{
+                //    _repository.Add(entity);
+                //}
                 _repository.Add(entities);
-                
                 scope.Commit();
             }
            

@@ -1,4 +1,6 @@
-﻿namespace MyEFDemo.Domain.Entity
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace MyEFDemo.Domain.Entity
 {
     public class UserMap: DemoEntityTypeConfiguration<User>
     {
@@ -6,6 +8,7 @@
         {
             ToTable("User");
             Property(p => p.Name).IsRequired();
+            Property(p => p.CreateTime).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Computed);
         }
     }
 }

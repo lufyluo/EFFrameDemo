@@ -48,21 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MigrationDbContext.cs" />
-    <Compile Include="Migrations\201712200342221_FirstBuildDb.cs" />
-    <Compile Include="Migrations\201712200342221_FirstBuildDb.Designer.cs">
-      <DependentUpon>201712200342221_FirstBuildDb.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801020651013_TableKeyChange.cs" />
-    <Compile Include="Migrations\201801020651013_TableKeyChange.Designer.cs">
-      <DependentUpon>201801020651013_TableKeyChange.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201802080506073_AddCreateDate.cs" />
-    <Compile Include="Migrations\201802080506073_AddCreateDate.Designer.cs">
-      <DependentUpon>201802080506073_AddCreateDate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201802080621331_check.cs" />
-    <Compile Include="Migrations\201802080621331_check.Designer.cs">
-      <DependentUpon>201802080621331_check.cs</DependentUpon>
+    <Compile Include="Migrations\201803050740453_UseDatabaseTime.cs" />
+    <Compile Include="Migrations\201803050740453_UseDatabaseTime.Designer.cs">
+      <DependentUpon>201803050740453_UseDatabaseTime.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,17 +70,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712200342221_FirstBuildDb.resx">
-      <DependentUpon>201712200342221_FirstBuildDb.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801020651013_TableKeyChange.resx">
-      <DependentUpon>201801020651013_TableKeyChange.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802080506073_AddCreateDate.resx">
-      <DependentUpon>201802080506073_AddCreateDate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802080621331_check.resx">
-      <DependentUpon>201802080621331_check.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201803050740453_UseDatabaseTime.resx">
+      <DependentUpon>201803050740453_UseDatabaseTime.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
