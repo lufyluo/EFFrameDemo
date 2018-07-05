@@ -39,7 +39,6 @@ namespace Demo.Migration.Migrations
         protected override void Generate(AddColumnOperation addColumnOperation)
         {
             SetCreatedColumn(addColumnOperation.Column);
-
             base.Generate(addColumnOperation);
         }
         //AddColumnOperation  在添加表触发
@@ -62,7 +61,6 @@ namespace Demo.Migration.Migrations
             if (column.Name == "CreateTime")
             {
                 column.DefaultValueSql = "GETDATE()";
-
             }
         }
     }

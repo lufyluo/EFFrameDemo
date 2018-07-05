@@ -30,7 +30,7 @@ namespace DemoService.User
         }
         public int Add(IList<UserItem> userItem)
         {
-            using (var scope = _repository.WorkContext)
+            using (var scope = _repository      .WorkContext)
             {
                 var entities = userItem.Select(n => new MyEFDemo.Domain.Entity.User()
                 {

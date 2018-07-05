@@ -48,9 +48,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MigrationDbContext.cs" />
-    <Compile Include="Migrations\201803050740453_UseDatabaseTime.cs" />
-    <Compile Include="Migrations\201803050740453_UseDatabaseTime.Designer.cs">
-      <DependentUpon>201803050740453_UseDatabaseTime.cs</DependentUpon>
+    <Compile Include="Migrations\201807050812277_EFBegin.cs" />
+    <Compile Include="Migrations\201807050812277_EFBegin.Designer.cs">
+      <DependentUpon>201807050812277_EFBegin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807050939115_change_createTime_default.cs" />
+    <Compile Include="Migrations\201807050939115_change_createTime_default.Designer.cs">
+      <DependentUpon>201807050939115_change_createTime_default.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,8 +74,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201803050740453_UseDatabaseTime.resx">
-      <DependentUpon>201803050740453_UseDatabaseTime.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807050812277_EFBegin.resx">
+      <DependentUpon>201807050812277_EFBegin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807050939115_change_createTime_default.resx">
+      <DependentUpon>201807050939115_change_createTime_default.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -7,13 +7,13 @@ namespace Demo.Migration.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class UseDatabaseTime : IMigrationMetadata
+    public sealed partial class EFBegin : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(UseDatabaseTime));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(EFBegin));
         
         string IMigrationMetadata.Id
         {
-            get { return "201803050740453_UseDatabaseTime"; }
+            get { return "201807050812277_EFBegin"; }
         }
         
         string IMigrationMetadata.Source

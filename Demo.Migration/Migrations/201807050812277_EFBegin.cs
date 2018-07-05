@@ -3,7 +3,7 @@ namespace Demo.Migration.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class UseDatabaseTime : DbMigration
+    public partial class EFBegin : DbMigration
     {
         public override void Up()
         {
