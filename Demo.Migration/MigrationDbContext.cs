@@ -8,7 +8,7 @@ using MyEFDemo.Domain;
 
 namespace Demo.Migration
 {
-    class MigrationDbContext: DemoContext
+    class MigrationDbContext: WorkContext
     {
     }
 }

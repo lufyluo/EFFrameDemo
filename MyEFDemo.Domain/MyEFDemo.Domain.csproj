@@ -47,7 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DemoContext.cs" />
     <Compile Include="DemoEntityTypeConfiguration.cs" />
     <Compile Include="Entity\Repo\IUserRepository.cs" />
     <Compile Include="Entity\User.cs" />
