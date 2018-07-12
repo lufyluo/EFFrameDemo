@@ -90,6 +90,7 @@
     <Compile Include="Attributes\DbTime.cs" />
     <Compile Include="AutoMapper\DemoMapper.cs" />
     <Compile Include="BaseEntity.cs" />
+    <Compile Include="DemoEntityTypeConfiguration.cs" />
     <Compile Include="DependencyManagement\ContainerManager.cs" />
     <Compile Include="DependencyManagement\DemoConfig.cs" />
     <Compile Include="DependencyManagement\IDependency.cs" />
@@ -107,6 +108,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Assembly.Extension\LufyAssembly.Extension.csproj">
+      <Project>{98775d0f-50ca-4361-ba66-3adf5624c14d}</Project>
+      <Name>LufyAssembly.Extension</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

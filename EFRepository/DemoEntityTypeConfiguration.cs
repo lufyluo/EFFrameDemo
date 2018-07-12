@@ -1,8 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
-using EFRepository;
 
-namespace MyEFDemo.Domain
+namespace EFRepository
 {
     public abstract class DemoEntityTypeConfiguration<T> : EntityTypeConfiguration<T> where T : BaseEntity
     {

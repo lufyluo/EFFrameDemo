@@ -7,13 +7,13 @@ namespace Demo.Migration.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class change_createTime_default : IMigrationMetadata
+    public sealed partial class changeCreateTimeValueTo1992 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(change_createTime_default));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(changeCreateTimeValueTo1992));
         
         string IMigrationMetadata.Id
         {
-            get { return "201807050939115_change_createTime_default"; }
+            get { return "201807110518374_changeCreateTimeValueTo1992"; }
         }
         
         string IMigrationMetadata.Source

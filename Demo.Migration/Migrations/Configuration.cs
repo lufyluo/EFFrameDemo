@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Data.Entity.Core.Metadata.Edm;
 using System.Data.Entity.Migrations.Model;
 using System.Data.Entity.SqlServer;
 
@@ -35,6 +36,16 @@ namespace Demo.Migration.Migrations
     }
     internal class CustomSqlServerMigrationSqlGenerator : SqlServerMigrationSqlGenerator
     {
+        protected override void Generate(AlterColumnOperation alterColumnOperation)
+        {
+            SetCreatedColumn(alterColumnOperation.Column);
+            base.Generate(alterColumnOperation);
+        }
+        protected override void Generate(AlterTableOperation alterTableOperation)
+        {
+            SetCreatedColumns(alterTableOperation.Columns);
+            base.Generate(alterTableOperation);
+        }
         //AddColumnOperation  在添加列触发
         protected override void Generate(AddColumnOperation addColumnOperation)
         {
@@ -58,9 +69,9 @@ namespace Demo.Migration.Migrations
 
         private static void SetCreatedColumn(PropertyModel column)
         {
-            if (column.Name == "CreateTime")
+            if (column.Type == PrimitiveTypeKind.DateTime&& column.GetType())
             {
-                column.DefaultValueSql = "GETDATE()";
+                column.DefaultValue ="1992.01.01";
             }
         }
     }
