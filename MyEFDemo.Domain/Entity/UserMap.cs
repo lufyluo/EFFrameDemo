@@ -10,8 +10,8 @@ namespace MyEFDemo.Domain.Entity
         {
             ToTable("user");
             Property(p => p.Name).IsRequired();
-            Property(p => p.CreateTime).HasColumnAnnotation("UseDbTime",true);
-            //Property(p => p.CreateTime).HasColumnType(nameof(PrimitiveTypeKind.DateTime)).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Computed);
+            
+            Property(p => p.CreateTime).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Computed);
         }
     }
 }

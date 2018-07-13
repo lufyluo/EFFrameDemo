@@ -10,5 +10,6 @@ namespace MyEFDemo.Domain.Entity.Book
     public class BookEntity:BaseEntity
     {
         public override DateTime CreateTime { get; set; }
+        public override DateTime UpdateTime { get; set; }
     }
 }

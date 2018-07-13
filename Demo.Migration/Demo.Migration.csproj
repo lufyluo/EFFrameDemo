@@ -48,29 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MigrationDbContext.cs" />
-    <Compile Include="Migrations\201807110509525_EFInit.cs" />
-    <Compile Include="Migrations\201807110509525_EFInit.Designer.cs">
-      <DependentUpon>201807110509525_EFInit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807110511330_EFInit1.cs" />
-    <Compile Include="Migrations\201807110511330_EFInit1.Designer.cs">
-      <DependentUpon>201807110511330_EFInit1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807110512420_changeTableName.cs" />
-    <Compile Include="Migrations\201807110512420_changeTableName.Designer.cs">
-      <DependentUpon>201807110512420_changeTableName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807110517104_changeCreateTimeColumn.cs" />
-    <Compile Include="Migrations\201807110517104_changeCreateTimeColumn.Designer.cs">
-      <DependentUpon>201807110517104_changeCreateTimeColumn.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807110518374_changeCreateTimeValueTo1992.cs" />
-    <Compile Include="Migrations\201807110518374_changeCreateTimeValueTo1992.Designer.cs">
-      <DependentUpon>201807110518374_changeCreateTimeValueTo1992.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807120311479_HasColumnAnnotation_UserDbTime.cs" />
-    <Compile Include="Migrations\201807120311479_HasColumnAnnotation_UserDbTime.Designer.cs">
-      <DependentUpon>201807120311479_HasColumnAnnotation_UserDbTime.cs</DependentUpon>
+    <Compile Include="Migrations\201807130824271_abstractBaseMethod1.cs" />
+    <Compile Include="Migrations\201807130824271_abstractBaseMethod1.Designer.cs">
+      <DependentUpon>201807130824271_abstractBaseMethod1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -94,23 +74,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201807110509525_EFInit.resx">
-      <DependentUpon>201807110509525_EFInit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807110511330_EFInit1.resx">
-      <DependentUpon>201807110511330_EFInit1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807110512420_changeTableName.resx">
-      <DependentUpon>201807110512420_changeTableName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807110517104_changeCreateTimeColumn.resx">
-      <DependentUpon>201807110517104_changeCreateTimeColumn.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807110518374_changeCreateTimeValueTo1992.resx">
-      <DependentUpon>201807110518374_changeCreateTimeValueTo1992.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807120311479_HasColumnAnnotation_UserDbTime.resx">
-      <DependentUpon>201807120311479_HasColumnAnnotation_UserDbTime.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807130824271_abstractBaseMethod1.resx">
+      <DependentUpon>201807130824271_abstractBaseMethod1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

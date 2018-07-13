@@ -14,8 +14,9 @@ namespace MyEFDemo.Domain.Entity
         public string Name { get; set; }
         public int Age { get; set; }
         public string Sex { get; set; }
-        [DbTime]
         //[DatabaseGenerated(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Computed)]  code first 无效
         public override DateTime CreateTime { get; set; }
+
+        public override DateTime UpdateTime { get; set; }
     }
 }

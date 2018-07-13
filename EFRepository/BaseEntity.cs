@@ -16,7 +16,7 @@ namespace EFRepository
         /// </summary>
         public int Id { get; set; }
         public abstract DateTime CreateTime { get; set; }
-
+        public abstract DateTime UpdateTime { get; set; }
         public override bool Equals(object obj)
         {
             return Equals(obj as BaseEntity);

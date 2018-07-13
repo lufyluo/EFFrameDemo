@@ -67,11 +67,11 @@ namespace Demo.Migration.Migrations
             }
         }
 
-        private static void SetCreatedColumn(PropertyModel column)
+        private static void SetCreatedColumn(ColumnModel column)
         {
-            if (column.Type == PrimitiveTypeKind.DateTime&& column.GetType())
+            if (column.Type == PrimitiveTypeKind.DateTime&& column.Annotations.ContainsKey("UseDbTime"))
             {
-                column.DefaultValue ="1992.01.01";
+                column.DefaultValue = "1991.05.14";
             }
         }
     }

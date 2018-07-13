@@ -7,13 +7,13 @@ namespace Demo.Migration.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class EFInit1 : IMigrationMetadata
+    public sealed partial class abstractBaseMethod1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(EFInit1));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(abstractBaseMethod1));
         
         string IMigrationMetadata.Id
         {
-            get { return "201807110511330_EFInit1"; }
+            get { return "201807130824271_abstractBaseMethod1"; }
         }
         
         string IMigrationMetadata.Source
