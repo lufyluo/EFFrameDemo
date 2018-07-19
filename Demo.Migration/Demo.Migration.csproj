@@ -52,6 +52,30 @@
     <Compile Include="Migrations\201807130824271_abstractBaseMethod1.Designer.cs">
       <DependentUpon>201807130824271_abstractBaseMethod1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807160251253_addAtti.cs" />
+    <Compile Include="Migrations\201807160251253_addAtti.Designer.cs">
+      <DependentUpon>201807160251253_addAtti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807160252399_addAtti1.cs" />
+    <Compile Include="Migrations\201807160252399_addAtti1.Designer.cs">
+      <DependentUpon>201807160252399_addAtti1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807160257505_addAtti11.cs" />
+    <Compile Include="Migrations\201807160257505_addAtti11.Designer.cs">
+      <DependentUpon>201807160257505_addAtti11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807160300418_addAtti2.cs" />
+    <Compile Include="Migrations\201807160300418_addAtti2.Designer.cs">
+      <DependentUpon>201807160300418_addAtti2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807160301504_addAtti3.cs" />
+    <Compile Include="Migrations\201807160301504_addAtti3.Designer.cs">
+      <DependentUpon>201807160301504_addAtti3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807180653184_nullableDateTime.cs" />
+    <Compile Include="Migrations\201807180653184_nullableDateTime.Designer.cs">
+      <DependentUpon>201807180653184_nullableDateTime.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -76,6 +100,24 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201807130824271_abstractBaseMethod1.resx">
       <DependentUpon>201807130824271_abstractBaseMethod1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807160251253_addAtti.resx">
+      <DependentUpon>201807160251253_addAtti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807160252399_addAtti1.resx">
+      <DependentUpon>201807160252399_addAtti1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807160257505_addAtti11.resx">
+      <DependentUpon>201807160257505_addAtti11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807160300418_addAtti2.resx">
+      <DependentUpon>201807160300418_addAtti2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807160301504_addAtti3.resx">
+      <DependentUpon>201807160301504_addAtti3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807180653184_nullableDateTime.resx">
+      <DependentUpon>201807180653184_nullableDateTime.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

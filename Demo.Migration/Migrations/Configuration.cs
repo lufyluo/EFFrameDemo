@@ -69,9 +69,18 @@ namespace Demo.Migration.Migrations
 
         private static void SetCreatedColumn(ColumnModel column)
         {
-            if (column.Type == PrimitiveTypeKind.DateTime&& column.Annotations.ContainsKey("UseDbTime"))
+            if ( column.Annotations.ContainsKey("UseDbTime"))//column.Type == PrimitiveTypeKind.DateTime&&
             {
-                column.DefaultValue = "1991.05.14";
+                var newValue = column.Annotations["UseDbTime"].NewValue.ToString();
+                DateTime dt;
+                if (DateTime.TryParse(newValue, out dt))
+                {
+                    column.DefaultValue = newValue;
+                }
+                else
+                {
+                    column.DefaultValueSql = newValue;
+                }
             }
         }
     }

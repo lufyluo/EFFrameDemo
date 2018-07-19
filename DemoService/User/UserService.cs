@@ -30,7 +30,7 @@ namespace DemoService.User
         }
         public int Add(IList<UserItem> userItem)
         {
-            using (var scope = _repository      .WorkContext)
+            using (var scope = _repository.WorkContext)
             {
                 var entities = userItem.Select(n => new MyEFDemo.Domain.Entity.User()
                 {
@@ -38,7 +38,8 @@ namespace DemoService.User
                     Age = n.Age,
                     Name = n.Name,
                     Sex = n.Sex,
-                    CreateTime = DateTime.Now
+                    CreateTime = DateTime.Now,
+                    UpdateTime = DateTime.Now
                 }).ToList();
                 //foreach (var entity in entities)
                 //{
